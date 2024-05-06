@@ -1,2 +1,6 @@
 
 .DS_Store
+.idea/misc.xml
+.idea/modules.xml
+.idea/btp-generative-ai-hub-use-cases.iml
+.idea/vcs.xml

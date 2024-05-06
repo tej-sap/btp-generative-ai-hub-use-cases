@@ -53,12 +53,12 @@ spec:
     spec: |
       predictor:
         imagePullSecrets:
-        - name: <YOUR_DOCKER_SECRET>
+        - name: docker-secret
         minReplicas: 1
         maxReplicas: 1
         containers:
         - name: kserve-container
-          image: docker.io/<YOUR_DOCKER_USER>/llama.cpp-server:ai-core
+          image: docker.io/csritej269/llama.cpp-server:ai-core
           ports:
             - containerPort: 8080
               protocol: TCP

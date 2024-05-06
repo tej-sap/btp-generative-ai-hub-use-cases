@@ -33,12 +33,12 @@ spec:
     spec: |
       predictor:
         imagePullSecrets:
-        - name: <YOUR_DOCKER_SECRET>
+        - name: docker-secret
         minReplicas: 1
         maxReplicas: 1
         containers:
         - name: kserve-container
-          image: docker.io/<YOUR_DOCKER_USER>/local-ai:ai-core
+          image: docker.io/csritej269/local-ai:ai-core
           ports:
             - containerPort: 18080
               protocol: TCP
