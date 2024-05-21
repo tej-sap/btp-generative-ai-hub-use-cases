@@ -19,13 +19,13 @@ spec:
         autoscaling.knative.dev/target: 1
         autoscaling.knative.dev/targetBurstCapacity: 0
       labels: |
-        ai.sap.com/resourcePlan: infer.s
+        ai.sap.com/resourcePlan: infer.m
     spec: |
       predictor:
         imagePullSecrets:
         - name: docker-secret
         minReplicas: 1
-        maxReplicas: 1
+        maxReplicas: 3
         containers:
         - name: kserve-container
           image: docker.io/csritej269/ollama:ai-core
